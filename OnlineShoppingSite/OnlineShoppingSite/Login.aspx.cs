@@ -7,8 +7,7 @@ namespace OnlineShoppingSite
 {
     public partial class Login : System.Web.UI.Page
     {
-        string str = ConfigurationManager.ConnectionStrings["Project1ConnectionString"].ConnectionString;
-        string str1 = ConfigurationManager.ConnectionStrings["RecordDBConnectionString"].ConnectionString;
+        string str = ConfigurationManager.ConnectionStrings["RecordDBConnectionString"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -74,7 +73,7 @@ namespace OnlineShoppingSite
             dt.Columns.Add("pcategory");
             dt.Columns.Add("ptotalprice");
 
-            String mycon = str1;
+            String mycon = str;
             SqlConnection scon = new SqlConnection(mycon);
             String myquery = "select * from CartDetails where Email='" + Session["username"].ToString() + "'";
             SqlCommand cmd = new SqlCommand();
