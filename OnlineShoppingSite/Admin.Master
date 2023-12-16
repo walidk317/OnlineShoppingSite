@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="OnlineShoppingSite.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        .navbar{
+            background: #00c3ff;
+            background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+            background: linear-gradient(to right, #ffff1c, #00c3ff);
+        }
+        .button{
+            background: #005204;
+            background: -webkit-linear-gradient(to-right, #6FB1FC, #4364F7, #005204);
+            background: linear-gradient(to right, #6FB1FC, #4364F7, #005204);
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style=" background-color:#242424">
+    <form id="form1" runat="server">
+        <div> 
+            <table align="center">
+                <tr style=" width:1200px; color:aqua; height:160px">
+                    <td>
+                        <asp:Image ID="Image1" runat="server" BorderColor="#666666" BorderWidth="3px"
+                            height="166px" Width="1200px" ImageUrl="~/Images/Adminbanner.png"/>
+                    </td>
+                </tr>
+                <tr style=" border-width:8px; border-color:#666666; width:1200px; color:#666666; height: 60px" bgcolor="#c547ff">
+                    <td>
+                        <div class="navbar">
+                            <table align="center" cellpadding="10">
+                                <tr style=" border-color:#666666">
+                                    <td>
+                                        <asp:Button CssClass="button" ID="btnCategory" runat="server" 
+                                            Text="Add Category" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="False" BorderColor="#666666" OnClick="btnCategory_Click" />
+                                    </td>
+                                    <td>
+                                        <asp:Button CssClass="button" ID="btnAddProduct" runat="server" 
+                                            Text="Add Product" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="False" BorderColor="#666666" OnClick="btnAddProduct_Click" />
+                                    </td>
+                                    <td>
+                                        <asp:Button CssClass="button" ID="btnUpdateProduct" runat="server" 
+                                            Text="Update Product" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="False" BorderColor="#666666" OnClick="btnUpdateProduct_Click" />
+                                    </td>
+                                    <td>
+                                        <asp:Button CssClass="button" ID="Order_Status" runat="server" 
+                                            Text="Order Status" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="False" BorderColor="#666666" OnClick="Button2_Click" />
+                                    </td>
+                                    <td>
+                                        <asp:Button CssClass="button" ID="btnLogout" runat="server" 
+                                            Text="Logout" Height="49px" Width="171px" Font-Bold="true" Font-Size="Medium"
+                                            CausesValidation="False" BorderColor="#666666" OnClick="Button3_Click" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                        </td>
+                </tr>
+            </table>
+            
+        </div>
+    </form>
+</body>
+</html>

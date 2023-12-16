@@ -1,0 +1,9 @@
+﻿ul li:nth-child(2) .fa{
+    background: #148e14;
+}
+ ul li:nth-child(2) .fa::after{
+     background: #148e14;
+ }
+ p{
+     color: #148e14;
+ }
