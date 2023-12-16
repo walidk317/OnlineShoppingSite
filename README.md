@@ -44,6 +44,10 @@ This project is built on the **.NET** framework.
 1. Locate the `app_data` folder in the project and ensure you have the necessary SQL scripts for database setup. 
 2. Open SQL Server Management Studio 2019, connect to your server, and execute the SQL queries from the scripts mentioned in the `app_data` folder.
 
+### Admin Login And User Login
+1. User login is done using Database connectivity.
+2. Admin login is done using the code present in Login.aspx.cs where Username : Admin and Password : 123
+
 ### Configuration
 
 Before running the project, please ensure you update the data source name in the `web.config` file and the connection string. Follow the steps below:
