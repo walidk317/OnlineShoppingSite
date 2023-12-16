@@ -44,6 +44,20 @@ This project is built on the **.NET** framework.
 1. Locate the `app_data` folder in the project and ensure you have the necessary SQL scripts for database setup. 
 2. Open SQL Server Management Studio 2019, connect to your server, and execute the SQL queries from the scripts mentioned in the `app_data` folder.
 
+### Configuration
+
+Before running the project, please ensure you update the data source name in the `web.config` file and the connection string. Follow the steps below:
+
+### 1. Update `web.config`
+
+Open the `web.config` file and locate the `<connectionStrings>` section. Update the `data source` attribute from `YOURSERVERNAME` to your required server name.
+
+```xml
+<connectionStrings>
+  <add name="RecordDBConnectionString" connectionString="Data Source=YOURSERVERNAME;Initial Catalog=RecordDB;Integrated Security=True" providerName="System.Data.SqlClient" />
+</connectionStrings>
+
+
 # iTextSharp.dll Integration (ALready in project,just given for knowledge)
 1. Download the `iTextSharp.dll` from the [official repository](https://github.com/itext/itextsharp).
 2. Place the `iTextSharp.dll` file in the project's root directory.
