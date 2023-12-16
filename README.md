@@ -70,6 +70,27 @@ Open the `web.config` file and locate the `<connectionStrings>` section. Update 
 3. Access the online shopping site through your preferred web browser.
 Feel free to explore the various features of the online shopping site. If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
+## Author Information
+
+Please be aware that author information, such as names and contact details, might exist in various places within the project,
+including databases and code files. If you encounter any instances of the author's name or related details,
+it is recommended to replace them with your own or your team's information.
+
+### Updating Author Information in Databases
+If you find author details in databases:
+1. Open your database management tool.
+2. Locate the relevant tables or records containing author information.
+3. Update the existing details with your own or your team's information.
+
+### Updating Author Information in Code
+If you find author details in code files:
+1. Search for and identify instances where the author's name or contact details are present.
+2. Replace the existing details with your own or your team's information.
+
+Feel free to customize the author information according to your needs. If you have any questions or need assistance,
+don't hesitate to reach out. Thank you!
+
+
 ## Contact
 If you have any questions or suggestions, feel free to reach out:
 - **Email:** [walidkadri1177@gmail.com)
